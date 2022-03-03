@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LJ - Station</title>
+    <link rel="stylesheet" href="css/basestyle.css">
+    <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+<body>
+    <script type="text/javascript" src="javascript/indexscript.js"></script>
+    <header id="titulo">
+        <hgroup>
+            <h1>LivroJogos-Station</h1>
+            <h2>Sua estação de jogos analógicos</h2>
+        </hgroup>
+    </header>
+    <section id="instrucao" onmouseenter="change('ul','infos')" onmouseout="returnto('infos')">
+        <article>
+            Informações:
+        </article>
+        <article>
+            <ul id="infos">
+                <li>Preencha a caixa de texto a direita;</li>
+                <li>Adicione à lista de passos logo abaixo (Clicando no botão "Adicionar");</li>
+                <li>Selecione o método de sorteio do passo a passo logo abaixo;</li>
+                <li>Por fim, faça o download do arquivo em PDF, CSV ou DOCX.</li>
+            </ul>
+            </article>
+            
+    </section>
+    <section id="newline">
+            <form id="formulario">
+                <span id="textin">Texto: </span><textarea id="dado" rows="6" cols="50" onclick="limpar()" maxlength="500" minlength="1" required autocomplete="on" spellcheck="true">Digite seu texto aqui!</textarea>
+                <p><button id="botao" class="bt" onclick="add()">Adicionar</button>
+            </form>
+        </section>
+    <section id="completefile">
+        <article id="result">
+            <p id="fomato">
+                <div>
+                    <input name="opcao" type="radio" checked id="op1">
+                    <label>Simples</label>
+                </div>
+                <div>
+                    <input name="opcao" type="radio" id="op2">
+                    <label>Complexo</label>
+                </div>
+                <div>
+                    <input name="opcao" type="radio" id="op3">
+                    <label>Aleatório</label>
+                </div>
+                <div>
+                    <input name="opcao" type="radio" id="op4">
+                    <label>Árvore</label>
+                </div>
+            </p>
+            <iframe src="result.html"></iframe>
+            <form id="criarPasso">
+                <p>
+                    <div>Passo: <input type="number" id="numPasso"></div>
+                    <div>Adicionar: <input type="number" id="addPasso"></div>
+                </p>
+                <p>
+                    <div>Gatilho: <input type="text" id="motiv"></div><input type="button" value="Agregar" id="botaoAdd" onclick="newpasso()">
+                </p>
+            </form>
+    </section>
+    <footer id="rodape">
+        MythoMitando - 2022<br>
+        Gravatá - PE
+    </footer>
+    
+</body>
+</html>

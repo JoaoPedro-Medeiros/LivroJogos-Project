@@ -1,0 +1,31 @@
+body {
+    width: 85%; 
+    display: block;
+    margin-left: 102px;
+    background-color: rgb(49, 49, 49);
+}
+
+/* cabeçalho da página*/
+
+header#titulo {
+    position:absolute;
+    display: block;
+    margin-left: -103px;
+    margin-top: -20px;
+    width: 1364px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: #1b1b1b;
+    color: white;
+}
+/* footer configurado */
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 35px;
+    border-radius: 2%;
+}

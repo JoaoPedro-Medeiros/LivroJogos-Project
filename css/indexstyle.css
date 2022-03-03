@@ -1,0 +1,127 @@
+
+/* Primeira section */
+
+section#instrucao {
+    display: block;
+    height: 150px;
+    width: 500px;
+    float: left;
+    margin-top:180px;
+    padding: 30px;
+    border-radius: 5%;
+    background-color: #1b1b1b;
+    color: white;
+    transition: background-color .5s, box-shadow .5s;
+}
+
+
+section#instrucao:hover {
+    border: 3px solid white;
+    margin-top: 173px;
+    margin-left: -10px;
+    box-shadow: 8px 7px 1px rgba(0,0,0,.8);
+    filter: blur();
+    background-color: #70707069;
+}
+
+/* aside para adição de novas linhas */
+
+section#newline {
+    background-color: #1b1b1b;
+    display: block;
+    float:right;
+    height: 150px;
+    width: 500px;
+    margin-top: 180px;
+    padding: 30px;
+    border-radius: 5%;
+    color: white;
+    transition: background-color .5s, box-shadow .5s;
+}
+
+section#newline:hover {
+    border: 3px solid white;
+    margin-top: 173px;
+    margin-left: -10px;
+    box-shadow: 8px 7px 1px rgba(0,0,0,.8);
+    filter: blur();
+    background-color: #70707069;
+}
+
+#formulario {
+    display: inline-block;
+    width: 510px;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+span#textin {
+    vertical-align: top;
+}
+
+/*section de demonstração do resultado no iframe*/
+
+section#completefile {
+    background-color: #1b1b1b;
+    border-radius: 10%;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 70px;
+}
+
+section#completefile iframe {
+    overflow: hidden;
+    width: 1000px;
+    height: 450px;
+}
+
+/* Detalhes */
+
+#botao {
+    width: 20%;
+    margin-left: 40%;
+    display: none;
+}
+
+.bt {
+    padding : 10px;
+    margin-left: 458px;
+}
+
+#dado {
+    border-radius: 2%;
+    text-align: center;
+    border: none;
+    resize: none;
+}
+
+/* Radio do resultado */
+
+section#completefile div{
+    display: inline-block;
+    padding: 10px;
+    padding-top: -10px;
+}
+
+section#completefile div label{
+    color: white;
+}
+
+/* Agregar Passos*/
+
+section#completefile form#criarPasso div{
+    color: white;
+    display: inline-block;
+}
+
+section#completefile form#criarPasso div input{
+    text-align: left;
+    width: 400px;
+}
+
+section#completefile form#criarPasso input#botaoAdd {
+    margin-left: 230px;
+    padding: 20px;
+}
+
