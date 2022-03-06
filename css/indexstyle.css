@@ -68,6 +68,14 @@ section#completefile {
     margin-top: 25px;
     display: inline-block;
     padding: 70px;
+    transition: box-shadow .5s;
+}
+
+section#completefile:hover {
+    box-shadow: 8px 7px 1px rgba(0,0,0, .8);
+    border: 3px solid white;
+    margin-top: 19px;
+    margin-left: -6px;
 }
 
 section#completefile iframe {
@@ -110,18 +118,25 @@ section#completefile div label{
 
 /* Agregar Passos*/
 
-section#completefile form#criarPasso div{
+section#completefile table {
+    width: 100%;
+}
+
+section#completefile form#criarPasso table td{
+    text-align: right;
+    
+}
+
+section#completefile input {
+    width: 99%;
+}
+
+section#completefile td.lado1 {
     color: white;
-    display: inline-block;
 }
 
-section#completefile form#criarPasso div input{
-    text-align: left;
-    width: 400px;
+section#completefile td.lado2 {
+    width:500px;
+    text-align: center;
+    margin-right: 100px;
 }
-
-section#completefile form#criarPasso input#botaoAdd {
-    margin-left: 230px;
-    padding: 20px;
-}
-

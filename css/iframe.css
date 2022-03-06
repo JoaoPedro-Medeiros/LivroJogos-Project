@@ -20,7 +20,9 @@ form#tabela tr {
 
 form#tabela td {
     width: 600px;
+    padding-bottom: 10px;
     text-align: justify;
+    border-top: 1px solid black;
 }
 
 form#tabela button{
@@ -29,6 +31,20 @@ form#tabela button{
     margin-top: -17px;
     border:none;
     background-color: rgba(0,0,0, 0);
+}
+
+form#tabela tr li{
+    
+    text-align: right;
+    display:block;
+    margin-right: 180px;
+    padding-bottom: 10px;
+
+}
+
+form#tabela tr li button{
+    background-color: rgba(0,0,0, 0);
+    border: none;
 }
 
 header {

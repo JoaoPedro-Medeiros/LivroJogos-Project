@@ -33,17 +33,24 @@ function salvar(contador, celulas, mostr){
     localStorage.setItem(`contador`, contador)
     localStorage.setItem(`celula${contador-1}`, celulas)
     localStorage.setItem(`mostrou`, mostr)
+
 }
 
 function newpasso(){
-    var passo = Number(document.getElementById('numPasso'))-1
-    var avan = Number(document.getElementById('addPasso'))-1
-    var motiv = document.getElementById('motiv')
-    var avanco = {'passo': passo, 'avança_para':avan, 'motivo':motiv} 
-    var copyAvanco = JSON.parse(JSON.stringify(avanco))
-    var pos = pass.length
+    var passo = Number(document.getElementById('numPasso').value)-1
+    var avan = Number(document.getElementById('addPasso').value)-1
+    var motiv = document.getElementById('motiv').value
 
-    pass[pos] = copyAvanco
+    var avanco = {'passo': passo, 'avança_para':avan, 'motivo':motiv}
+    var pos = pass.length
+    
+    alert(`pos: ${pos}`)
+    pass[pos] = JSON.parse(JSON.stringify(avanco))
 
     localStorage.setItem('passos', JSON.stringify(pass))
+    localStorage.setItem('mostrou', false)
+    document.location.reload()
 }
+
+//TODO: "pos" inicia toda vez que a página reinicia
+//TODO: Os X dos passos estão estranhos

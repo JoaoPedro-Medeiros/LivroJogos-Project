@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LJ - Station</title>
+    <title>LJ-Project/Station</title>
     <link rel="stylesheet" href="css/basestyle.css">
     <link rel="stylesheet" href="css/indexstyle.css">
 </head>
@@ -58,13 +58,12 @@
             </p>
             <iframe src="result.html"></iframe>
             <form id="criarPasso">
-                <p>
-                    <div>Passo: <input type="number" id="numPasso"></div>
-                    <div>Adicionar: <input type="number" id="addPasso"></div>
-                </p>
-                <p>
-                    <div>Gatilho: <input type="text" id="motiv"></div><input type="button" value="Agregar" id="botaoAdd" onclick="newpasso()">
-                </p>
+                <table>
+                    <tr><td class="lado1">Passo:</td><td class="lado2"><input type="number" id="numPasso"></td><tr>
+                    <tr><td class="lado1">Adicionar:</td><td class="lado2"><input type="number" id="addPasso"></td></tr>
+                    <tr><td class="lado1">Gatilho:</td><td class="lado2"><input type="text" id="motiv"></td></tr>
+                </table>
+                <p><input type="button" value="Agregar" id="botaoAdd" onclick="newpasso()"></p>
             </form>
     </section>
     <footer id="rodape">
