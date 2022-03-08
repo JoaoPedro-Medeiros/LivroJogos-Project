@@ -7,7 +7,12 @@ function recuperar(){
     if(mostrou.toLowerCase() == 'false'){
         for(var cont = 0; cont < contador; cont++){
             todos[cont] = JSON.parse(localStorage.getItem(`celula${cont}`))
-            passos = JSON.parse(localStorage.getItem('passos'))
+            var stringPassos = localStorage.getItem('passos')
+            if(stringPassos.charAt(1) == ']' ){
+                passos = 0
+            }else{
+                passos = JSON.parse(localStorage.getItem('passos'))
+            }
             tabela = document.getElementById('tabela')
             var novaLinha = document.createElement('tr')
             novaLinha.innerHTML = `<td>${todos[cont].posOrganização+1} - ${todos[cont].conteudo}</td><button onclick="eliminar(${todos[cont].posOrganização})">&#10006</button>`

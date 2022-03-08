@@ -42,14 +42,25 @@ function newpasso(){
     var motiv = document.getElementById('motiv').value
 
     var avanco = {'passo': passo, 'avança_para':avan, 'motivo':motiv}
-    var pos = pass.length
+    var pos = JSON.parse(localStorage.getItem('passos')).length
     
-    alert(`pos: ${pos}`)
     pass[pos] = JSON.parse(JSON.stringify(avanco))
-
+    
     localStorage.setItem('passos', JSON.stringify(pass))
     localStorage.setItem('mostrou', false)
     document.location.reload()
+}
+
+alert(`${localStorage.getItem('passos')}`)
+var keysNovamente = Object.keys(localStorage)
+var validador = false
+for(var testando in keysNovamente){
+    if(keysNovamente[testando] == 'passos'){
+        validador = true
+    }
+}
+if(!validador){
+    localStorage.setItem('passos', '[]')
 }
 
 //TODO: "pos" inicia toda vez que a página reinicia
