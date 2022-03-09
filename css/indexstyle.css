@@ -1,0 +1,143 @@
+
+/* Primeira section */
+
+section#instrucao {
+    display: block;
+    height: 150px;
+    width: 500px;
+    float: left;
+    margin-top:50px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffbd59;
+    color: white;
+    transition: background-color .5s, box-shadow .5s;
+}
+
+
+section#instrucao:hover {
+    border: 3px solid white;
+    margin-top: 43px;
+    margin-left: -10px;
+    box-shadow: 8px 7px 1px rgba(0,0,0,.4);
+    filter: blur();
+    background-color: #36363669;
+}
+
+/* aside para adição de novas linhas */
+
+section#newline {
+    background-color: #ffbd59;
+    display: block;
+    float:right;
+    height: 150px;
+    width: 500px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color .5s, box-shadow .5s;
+}
+
+section#newline:hover {
+    border: 3px solid white;
+    margin-top: 43px;
+    margin-left: -10px;
+    box-shadow: 8px 7px 1px rgba(0,0,0,.4);
+    filter: blur();
+    background-color: #36363669;
+}
+
+#formulario {
+    display: inline-block;
+    width: 510px;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+span#textin {
+    vertical-align: top;
+}
+
+/*section de demonstração do resultado no iframe*/
+
+section#completefile {
+    background-color: #ffbd59;
+    border-radius: 30px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 70px;
+    transition: box-shadow .5s, background-color .5s;
+}
+
+section#completefile:hover {
+    box-shadow: 10px 12px 1px rgba(0,0,0, .4);
+    background-color: rgba(0,0,0,.4);
+    border: 3px solid white;
+    margin-top: 18px;
+    margin-left: -6px;
+}
+
+section#completefile iframe {
+    overflow: hidden;
+    width: 1000px;
+    height: 450px;
+}
+
+/* Detalhes */
+
+#botao {
+    width: 20%;
+    margin-left: 40%;
+    display: none;
+}
+
+.bt {
+    padding : 10px;
+    margin-left: 458px;
+}
+
+#dado {
+    border-radius: 2%;
+    text-align: center;
+    border: none;
+    resize: none;
+}
+
+/* Radio do resultado */
+
+section#completefile div{
+    display: inline-block;
+    padding: 10px;
+    padding-top: -10px;
+}
+
+section#completefile div label{
+    color: white;
+}
+
+/* Agregar Passos*/
+
+section#completefile table {
+    width: 100%;
+}
+
+section#completefile form#criarPasso table td{
+    text-align: right;
+    
+}
+
+section#completefile input {
+    width: 99%;
+}
+
+section#completefile td.lado1 {
+    color: white;
+}
+
+section#completefile td.lado2 {
+    width:500px;
+    text-align: center;
+    margin-right: 100px;
+}

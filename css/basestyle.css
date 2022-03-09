@@ -1,0 +1,50 @@
+body {
+    width: 85%; 
+    display: block;
+    margin-left: 102px;
+    background-color: rgb(236, 236, 236);
+}
+
+/* cabeçalho da página*/
+
+header#titulo {
+    margin-top: -20px;
+    height: 250px;
+    background: url('../imagens/Logo.png') no-repeat 50% 5px;
+    background-color: #ffbd59;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: height .5s, box-shadow .5s;
+}
+
+header#titulo:hover{
+    margin-top: -23px;
+    height: 300px;
+    border: 3px solid white;
+    box-shadow: 8px 7px 1px rgba(0, 0, 0, .4);
+}
+
+header#titulo input{
+    width: 200px;
+    height: 60px;
+    /*margin: 15% 41.5%;*/
+    border: none;
+    background-color: #ffbd59;
+    color: none;
+    transition: border .2s;
+}
+
+header#titulo input:hover{
+    border: 3px solid white;
+    color: white;
+}
+/* footer configurado */
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 35px;
+    border-radius: 2%;
+}
